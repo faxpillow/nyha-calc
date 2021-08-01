@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700&display=swap" rel="stylesheet">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+
+    
+    <title>NY Health Act Calculators</title>
+
+    
+        <script>
+        
+//        $("#click").click(function() {
+//              $("#reaction").toggle();
+//             });
+        
+                        $(document).ready(function(){
+//  $('#submit').click(function(){
+//    alert("Results");
+//  });
+      $('#submit').click(function(){
+$("#cost").text("#healthcare_cost");
+$("#cost2").text("#healthcare_cost");
+          
+           $("#yp").css({"background-color":"yellow", "font-size":"150%"});
+          $("#Ryp").css({"background-color":"yellow", "font-size":"150%"});
+         $("#thyp").css("background-color", "yellow");
+          
+          var hc = $("#healthcare_cost").val();
+          $("#cost2").text(hc).css({"background-color":"grey", "font-size":"120%"});
+          $("#cost").text(hc).css({"background-color":"grey", "font-size":"120%"});
+
+//          var ai = $("#annual_income").val();
+//          var o = $("#0").val();
+//          var x = $("#25000").val();
+//          var xx = $("#50000").val();
+//          var xxx = $("#75000").val();
+//          var xxxx = $("#100000").val();
+//          var xxxxx = $("#200000").val();
+//          
+//          var y = $("#3450").val();
+//          var yy = $("#7695").val();
+//          var yyy = $("#12275").val();
+//          var yyyy = $("#33875").val();
+//        
+//            var xmr = $("#.138").val();
+//            var xxmr = $("#.169").val();
+//            var xxxmr = $("#.184").val();
+//            var xxxxmr = $("#.216").val();
+//            var xxxxxmr = $("#.246").val();
+//          
+//          if (ai<x){
+//              $("#mr").text(o);
+//              $("#tta").text((ai-o)*o+o);
+////              var tta = $("#tta");
+//              $("#er").text(((ai-o)*o+o)/ai);
+//              $("#yp").text(((ai-o)*o+o)*.2);
+//              $("#ner").text((((ai-o)*o+o)*.2)/ai);
+//          }
+//          
+//          else if (ai>=x && ai<xx){
+//                $("#mr").text(xmr);
+//              $("#tta").text((ai-x)*xmr+o);
+//              $("er").text(((ai-x)*xmr+o)/ai);
+//              $("#yp").text(((ai-x)*xmr+o)*.2);
+//              $("#ner").text((((ai-x)*xmr+o)*.2)/ai);
+//          }
+//          
+//             else (ai>=xx && ai<xxx){
+//                $("#mr").text(xxmr);
+//              $("#tta").text((ai-xx)*xxmr+y);
+//              $("#er").text(((ai-xx)*xxmr+y)/ai);
+//              $("#yp").text(((ai-xx)*xxmr+y)*.2);
+//              $("#ner").text((((ai-xx)*xxmr+y)*.2)/ai);
+//          }
+//          
+//          
+//          
+//          
+          
+//          
+//          
+//                     var ai = document.getElementById("annual_income").value;
+//            var hc = document.getElementById("healthcare_cost").value;
+//      
+//            var tta = "((ai)-x)*(mr)+y";
+//            var er = "(tta)/(ai)";
+//            var yp = "(tta)*(0.2)";
+//            var ner = "(yp)/ai";
+//            
+//            var Rtta ="(ai-Rx)*(Rmr)+Ry";
+//            var Rer = "(Rtta)/ai";
+//            var Ryp = "(Rtta)*(0.2)";
+//            var Rner = "(Ryp)/ai";
+//            
+//            var mr="0.00%";
+//
+//            if (ai<25000) {
+//                 var mr="0", var x="0", var y="0";
+//            }
+//            else if (ai>=25000 && ai<50000) {
+//                var mr=".138", var x="25000", var y="0";
+//            }
+//            else if (ai>=50000 && ai<75000) {
+//                var mr=".169", var x="50000", var y="3450";
+//            }
+//            else if (ai>=75000 && ai<100000) {
+//                var mr=".184", var x="75000", var y="7695";
+//        }
+//            else if (ai>=100000 && ai<200000) {
+//                var mr=".216", var x="100000", var y="12275";
+//        }
+//            else if (ai>=200000 && ai<1000000) {
+//                var mr=".246", var x="200000", var y="33875";
+//            }
+//            else (ai>=1000000) {
+//                var mr="Wow! You owe the folks who work for you free healthcare. Please pay your taxes!", var x="200,000", var y="33875";
+//            }
+//            
+//            if (ai<25000) {
+//                var Rmr="0", var Rx="0", var Ry="0";
+//            }
+//            else if (ai>=25000 && ai<128400) {
+//                var Rmr=".1445", var Rx="25000", var Ry="0";
+//            }
+//            else  (ai>=128400) {
+//                var Rmr=".289", var Rx="128400", var Ry="14,941";
+//        };
+//
+//      document.write (document.getElementById("25000"))
+//      
+//      document.write(x*20)
+//      
+//          
+  });
+                            
+});
+
+        </script>
+    
+</head>
+
+<body>
+
+    <a class="navbar-brand" href="index.html">
+        <span class="glyphicon glyphicon-dashboard" aria-hidden="true"></span></a>
+
+    <div class="jumbotron">
+        <h1 class="title"> How much do you save on the NY Health Act? </h1>
+
+
+    <h10>ANNUAL INCOME</h10>
+    <div class="income">
+        <div class="input-group mb-3">
+            <span class="input-group-text">$</span>
+            <input type="text" class="form-control" input id="annual_income">
+            <span class="input-group-text">.00</span>
+        </div>
+    </div>
+
+    <h11>ANNUAL HEALTHCARE COSTS</h11>
+    <div class="cost">
+        <div class="input-group mb-3">
+            <span class="input-group-text">$</span>
+            <input type="text" class="form-control" input id="healthcare_cost">
+            <span class="input-group-text">.00</span>
+        </div>
+        <div class="d-grid gap-2" div id="button">
+            <button id="submit" button class="btn btn-primary active" type="button">SUBMIT</button>
+        </div>
+    </div>
+    
+
+
+        <div class="results">
+            <h12>
+                <p class="text-center"> <b>ESTIMATED RESULTS </b> </p>
+            </h12>
+
+            <table class="table table-hover table-bordered border-dark" table id="results">
+                <thead>
+                    <tr>
+                        <th scope="col">FOR INDIVIDUALS</th>
+                        <th scope="col">RODBERG</th>
+                        <th scope="col">RAND</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="table-light">
+                        <th scope="row">Total Tax Assessed</th>
+                        <td td id="tta"><b> cell </b></td>
+                        <td td id="Rtta"> cell </td>
+                    </tr>
+                    <tr class="table-secondary">
+                        <th scope="row"> Marginal Rate </th>
+                        <td td id="mr"><b>cell </b></td>
+                        <td td id="Rmr"> Cell </td>
+                    </tr>
+                    <tr class="table-light">
+                        <th scope="row">Effective Rate</th>
+                        <td td id="er"><b> cell</b> </td>
+                        <td td id="Rer"> Cell </td>
+                    </tr>
+                    <tr class="table-warning">
+                        <th scope="row" th id="thyp">YOU PAY (Max/20%) </th>
+                        <td td id="yp"> <b> cell </b> </td>
+                        <td td id="Ryp"> Cell </td>
+                    </tr>
+                    <tr class="table-success">
+                        <th scope="row">New Effective Rate</th>
+                        <td td id="ner"> <b> cell </b> </td>
+                        <td td id="Rner"> Cell </td>
+                    </tr>
+                    <tr class="table-dark">
+                        <th scope="row">Before, you paid:</th>
+                        <td td id="cost"><b>healthcare_cost</b> </td>
+                        <td td id="cost2">healthcare_cost2 </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        
+        
+              <div class="rodberg">
+            <h12>
+                <p class="text-center"> <b>Rodberg Summary </b> </p>
+            </h12>
+
+            <table class="table table-hover table-bordered border-dark" table id="results">
+                <thead>
+                    <tr>
+                        <th scope="col">INCOME MARGIN</th>
+                        <th scope="col">TAX BRACKET</th>
+                        <th scope="col">CUMULATIVE TAX</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="table-light">
+                        <th scope="row" th id="0">0</th>
+                        <td><b> 0 </b></td>
+                        <td> 0 </td>
+                    </tr>
+                    <tr class="table-light">
+                        <th scope="row" th id="25000"> 25000 </th>
+                        <td td id=".138"><b> .138 </b></td>
+                        <td> 0 </td>
+                    </tr>
+                    <tr class="table-light">
+                        <th scope="row" th id="50000">50000</th>
+                        <td td id=".169"><b> .169</b> </td>
+                        <td td id="3450"> 3450 </td>
+                    </tr>
+                    <tr class="table-light">
+                        <th scope="row" th id="75000">75000 </th>
+                        <td td id=".184"> <b> .184 </b> </td>
+                        <td td id="7675"> 7675 </td>
+                    </tr>
+                    <tr class="table-light">
+                        <th scope="row" th id="100000">100000</th>
+                        <td td id=".216"> <b> .216 </b> </td>
+                        <td td id="12275"> 12275 </td>
+                    </tr>
+            <tr class="table-light">
+                        <th scope="row" th id="200000">200000</th>
+                        <td td id=".246"> <b> .246 </b> </td>
+                        <td td id="33875"> 33875 </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+              <div class="rand">
+            <h12>
+                <p class="text-center"> <b>RAND Proposal </b> </p>
+            </h12>
+
+            <table class="table table-hover table-bordered border-dark" table id="results">
+                <thead>
+                    <tr>
+                        <th scope="col">INCOME MARGIN</th>
+                        <th scope="col">TAX BRACKET</th>
+                        <th scope="col">CUMULATIVE TAX</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="table-info">
+                        <th scope="row">0</th>
+                        <td><b> 0 </b></td>
+                        <td> 0 </td>
+                    </tr>
+                    <tr class="table-info">
+                        <th scope="row"> 25000 </th>
+                        <td td id=".1445"><b> .1445 </b></td>
+                        <td> 0 </td>
+                    </tr>
+                    <tr class="table-info">
+                        <th scope="row" th id="128400">128400</th>
+                        <td td id=".289"><b> .289</b> </td>
+                        <td td id="14941"> 14941 </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+
+        <div class="averages">
+            <h13>
+                <p class="text-center"><b>REGIONAL AVERAGES</b> </p>
+            </h13>
+            <div class="averagestable">
+                <table class="table table-hover table-bordered border-dark" table id="chart">
+                    <thead>
+                        <tr>
+                            <th scope="col">REGION</th>
+                            <th scope="col">MEDIAN INCOME (2019)</th>
+                            <th scope="col">ANNUAL COST</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="table-primary">
+                            <th scope="row">NYS - Individual</th>
+                            <td><b> $32,320 </b></td>
+                            <td> Cell </td>
+                        </tr>
+                        <tr class="table-danger">
+                            <th scope="row">US - Individual</th>
+                            <td><b>$31,133</b></td>
+                            <td> Cell </td>
+                        </tr>
+                        <tr class="table-info">
+                            <th scope="row">Bronx - Individual</th>
+                            <td><b> $22,232</b> </td>
+                            <td> Cell </td>
+                        </tr>
+                        <tr class="table-primary">
+                            <th scope="row">NYS - Household</th>
+                            <td> <b> $63,998 </b> </td>
+                            <td> Cell </td>
+                        </tr>
+                        <tr class="table-danger">
+                            <th scope="row">US - Household</th>
+                            <td> <b> $79,900 </b> </td>
+                            <td> Cell </td>
+                        </tr>
+                        <tr class="table-info">
+                            <th scope="row">Bronx - Household</th>
+                            <td> <b> $40,088 </b> </td>
+                            <td> Cell </td>
+                        </tr>
+                        <tr class="table-light">
+                            <th scope="row">Nassau - Household</th>
+                            <td> <b> $116,100</b> </td>
+                            <td> Cell </td>
+                        </tr>
+                        <tr class="table-dark">
+                            <th scope="row"></th>
+                            <td> <b> Everyone Saves! </b> </td>
+                            <td> &#128516; </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+       
+
+
+        <div id="menu">
+            
+            <button class="accordion">CALCULATORS</button>
+
+            <div class="panel">
+                <a href="" class="w3-button w3-block w3-left-align">Transactional Process</a>
+                <a href="" class="w3-button w3-block w3-left-align">Nanotechnology</a>
+                <a href="" class="w3-button w3-block w3-left-align">Synthetic Sentience</a>
+                <a href="" class="w3-button w3-block w3-left-align">The Emergent Operational Infotech Ecologyy</a>
+                <a href="" class="w3-button w3-block w3-left-align">Internet as a Symbiotic Organism</a>
+                <a href="" class="w3-button w3-block w3-left-align">A World in Transition</a>
+                <a href="" class="w3-button w3-block w3-left-align">Presentations, Radio & TV Interviews, Media Archives</a>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="container">
+        <h4 class="sponsors"> MORE INFORMATION </h4>
+        <div class="logos"></div>
+    </div>
+
+
+    <div id="contact">
+        <div class="container-fluid">
+            <p><br><span class="glyphicon glyphicon-envelope"></span></p>
+            <p class="contact">CONTACT</p><br>
+            <div class="row-center">
+                <p>- :) -<br>
+                    <a href="mailto: faxpillow@gmail.com">Website by Fxps</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+<!--
+
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                /* Toggle between adding and removing the "active" class,
+                to highlight the button that controls the panel */
+                this.classList.toggle("active");
+
+                /* Toggle between hiding and showing the active panel */
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            });
+            
+            var sub = document.getElementById("submit");
+        var i;
+            
+         for (i) {
+            sub[i].addEventListener("click", aFunction() {
+                /* Toggle between adding and removing the "active" class,
+                to highlight the button that controls the panel */
+                this.classList.toggle("active");
+
+                /* Toggle between hiding and showing the active panel */
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+                 });
+                
+        }
+-->
+    
+<script>
+        logos = [{
+                "id": 0,
+                "logo": "GANY QR Code",
+                "image": "",
+                "link": "https://"
+            },
+            {
+                "id": 2,
+                "logo": "NYHA QR Code",
+                "image": "assets/nyhaccode.png",
+                "link": ""
+            },
+            {
+                "id": 3,
+                "logo": "Healthcare Resources",
+                "image": "",
+                "link": ""
+            },
+            {
+                "id": 5,
+                "logo": "Flyers",
+                "image": "",
+                "link": ""
+            },
+            {
+                "id": 4,
+                "logo": "NY Health Act",
+                "image": "",
+                "link": ""
+            },
+
+            {
+                "id": 7,
+                "logo": "",
+                "image": "",
+                "link": ""
+            },
+            {
+                "id": 8,
+                "logo": "",
+                "image": "",
+                "link": ""
+            },
+            {
+                "id": 9,
+                "logo": "",
+                "image": "",
+                "link": ""
+            },
+            {
+                "id": 10,
+                "logo": "",
+                "image": "",
+                "link": ""
+            },
+
+        for (i in logos) {
+            document.getElementById("container").innerHTML += '<div class="logo"></div>';
+            console.log(document.getElementsByClassName('logo'));
+            document.getElementsByClassName('logo')[i].innerHTML = `
+            <img src="${logos[i].image}">
+            <a href="${logos[i].link}">${logos[i].logo}</a>
+			`;
+        }
+        
+    
+             document.getElementById("results").innerHTML += '<div class="logo"></div>';
+                console.log(document.getElementsByClassName('logo'));
+                document.getElementsByClassName('logo')[i].innerHTML = `
+            <img src="${logos[i].image}">
+            <a href="${logos[i].link}">${logos[i].logo}</a>
+    
+
+    </script>
+
+</body>
+
+<footer class="container-fluid text-center">
+    <a href="index.html" title="To Top">
+        <span class="glyphicon glyphicon-chevron-up"></span>
+    </a>
+</footer></html>
+

@@ -1,0 +1,435 @@
+* {}
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700&display=swap');
+
+    {}
+
+@media (min-width: 576px) {
+    ...
+}
+
+@media (min-width: 768px) {
+    ...
+}
+
+@media (min-width: 992px) {
+    ...
+}
+
+@media (min-width: 1200px) {
+    ...
+}
+
+@include media-breakpoint-down(xs) {
+    ...
+}
+
+@include media-breakpoint-down(sm) {
+    ...
+}
+
+@include media-breakpoint-down(md) {
+    ...
+}
+
+@include media-breakpoint-down(lg) {
+    ...
+}
+
+
+* {
+    font-family: 'Open Sans Condensed', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    font-family: 'Open Sans Condensed', sans-serif;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+h1,
+h2,
+h5,
+h6 {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: bold;
+    color: orangered;
+    text-shadow: #fff 0px 0px 4px, #fff 0px 0px 4px, #fff 0px 0px 4px, #fff 0px 0px 4px, #fff 0px 0px 4px, #fff 0px 0px 4px;
+}
+
+
+h1 {
+    font-size: 30px;
+    padding-top: 0px;
+}
+
+h4 {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: 700;
+    color: aliceblue;
+    font-size: 2.6em;
+}
+
+.navbar {
+    font-weight: bold;
+    margin-bottom: 0;
+    background-color: #fc4300;
+    z-index: 9999;
+    border: 0;
+    font-size: 22px !important;
+    font-variant-position: normal;
+    line-height: 1.42857143 !important;
+    letter-spacing: 4px;
+    border-radius: 0px;
+
+}
+
+
+.navbar li a,
+.navbar .navbar-brand {
+    color: #fff !important;
+    padding: 24px;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+
+.navbar-nav li a:hover,
+.navbar-nav li.active a {
+    color: #18006e !important;
+    background-color: #fff !important;
+}
+
+..navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #fff !important;
+}
+
+.navbar-brand {
+    position: absolute;
+    padding-left: 0px;
+    margin-left: 0px;
+}
+
+.icon-bar {
+    color: aliceblue;
+}
+
+.inputs {
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+
+.jumbotron {
+    background-color: aliceblue;
+    color: white;
+    background-size: 100% auto;
+    padding-bottom: 260px;
+    margin-bottom: 0;
+}
+
+h10,
+h11 {
+    margin-top: 60px;
+    margin-left: 60px;
+    margin-right: 60px;
+    font-size: 2em;
+    color: black;
+}
+
+h12,
+h13 {
+    font-size: 2em;
+    color: black;
+    margin-bottom: 10px;
+}
+
+table {
+  border-collapse:collapse;
+    margin-top:0 !important;
+}
+
+.results, .averages {
+margin-bottom: 40px;
+}
+
+.income {
+    margin-left: 60px;
+    margin-right: 60px;
+    font-size: 2em;
+    color: black;
+}
+
+.cost {
+    margin-left: 60px;
+    margin-right: 60px;
+    font-size: 2em;
+    color: black;
+        margin-bottom: 50px;
+}
+
+
+h1.title {
+    margin-top: 60px;
+    margin-left: 60px;
+    margin-right: 60px;
+    font-size: 4em;
+}
+
+.table {
+    margin-top: 40px;
+    margin-left: 92px;
+    margin-right: 60px;
+    width: 78%;
+}
+
+
+
+.accordion {
+    margin-top: 40px;
+    margin-left: 60px;
+    margin-right: 60px;
+    background-color: #d9d9d9;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 90%;
+    text-align: left;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    transition: 1s;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.active,
+.accordion:hover {
+    background-color: #ccc4c4;
+}
+
+.panel {
+    margin-left: 60px;
+    margin-right: 60px;
+    width: 90%;
+    padding: 0 18px;
+    background-color: #f5fcfb;
+    display: none;
+    overflow: hidden;
+    color: #444;
+    font-size: 20px;
+}
+
+.w3-bar-block .w3-bar-item {
+    margin-top: 20px;
+    width: 100%;
+    display: block;
+    padding: 8px 16px;
+    text-align: left;
+    border: none;
+    white-space: normal;
+    float: none;
+    outline: 0
+}
+
+.d-grid gap-2 {
+    font-display: optional;
+}
+
+.w3-bar-block.w3-center .w3-bar-item {
+    text-align: center
+}
+
+.w3-block {
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.w3-button:hover {
+    color: #000 !important;
+    background-color: #ccc4c4 !important;
+}
+
+.w3-button {
+    border: none;
+    display: inline-block;
+    padding: 8px 16px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    background-color: inherit;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap
+}
+
+
+.accordion:after {
+    content: '\02795';
+    font-size: 30px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2796";
+}
+
+.transbox {
+    margin: 10px;
+    background-color: aliceblue;
+    opacity: 0.6;
+    padding: 30px;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+.transbox2 {
+    margin: 10px;
+    background-color: black;
+    opacity: 0.6;
+    padding: 30px;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+p.about {
+    font-size: 20px;
+    text-align: right;
+    text-align: justify;
+    text-justify: auto;
+    text-shadow: #fff 0px 0px 10px, #fff 0px 0px 10px, #fff 0px 0px 10px, #fff 0px 0px 10px, #fff 0px 0px 10px, #fff 0px 0px 10px;
+    font-weight: bold;
+}
+
+p.converge {
+    font-size: 20px;
+    text-align: left;
+    text-align: justify;
+    text-justify: auto;
+    color: aliceblue;
+    font-weight: bold;
+}
+
+.container-fluid {}
+
+#about {
+    background-image: url(../assets/img/solis.png);
+    background-size: 100% auto;
+    font-weight: 300;
+    padding-top: 50px;
+    padding-bottom: 160px;
+}
+
+#converge {
+    background: url(../assets/img/idr.png);
+    background-position: right;
+    padding-top: 50px;
+    padding-bottom: 140px;
+}
+
+.triangle-image-wrapper {
+    float: right;
+    position: relative;
+    z-index: 100;
+    padding-top: 100px;
+    padding-left: 20px;
+    padding-right: 60px;
+    display: flex;
+}
+
+.triangle {
+    width: 260px;
+    height: 260px;
+}
+
+
+.col-sm-4 {
+    display: inline-block;
+}
+
+#container {
+    background-color: #c4c0be;
+    color: steelblue;
+    align-content: center;
+    text-align: center;
+    padding: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 60px;
+    max-width: 100%;
+}
+
+h4.sponsors {
+    color: #4e6aad;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    text-align: center;
+    font-size: 3.2em;
+}
+
+
+
+.logo {
+    box-sizing: border-box;
+    width: 100px;
+    height: 120px;
+    border: none;
+    line-height: 1;
+    margin: 6px;
+    vertical-align: top;
+    padding: 0 0 0 0;
+    text-align: center;
+    background-color: #c4c0be;
+    display: inline-grid;
+    background-color: #E8E9E1;
+    background-clip: padding-box;
+    border-radius: 8px;
+
+}
+
+.logo img {
+    max-width: 100%;
+    border: none;
+    margin: 0px 0px;
+
+}
+
+.logo:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+p.contact {
+    font-size: 2.2em;
+    font-weight: bold;
+}
+
+#contact {
+    background-color: #2b333b;
+    color: aliceblue;
+    font-size: 22px;
+    font-family: 'Open Sans Condensed', 700;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+footer .glyphicon {
+    font-size: 50px;
+    margin-bottom: 10px;
+    color: #f4511e;
+}
+
+footer {
+    background-image: url(../assets/img/nasagate.jpg);
+    padding-bottom: 40px;
+}
