@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:700&display=swap');
+
+*{
+    font-family: 'Arial Black', bold, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor:url(../cursor.png);
+}
+
+form{
+    outline-style:none;
+}
+
+body{
+        background-image:url(../nyhapeoplebanner.jpg);
+    background-size:cover;
+    height:100%;
+}
+
+
+
+p{
+    font-family: 'Arial Black', bold, sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Arial Black', bold, sans-serif;
+}
+
+#title{
+    padding-left:30px;
+    padding-top:30px;
+    font-size:40px;
+    color:;
+}
+
+#info{
+    padding-top:50px;
+    text-align:center;
+    font-size:18px;
+}
+
+a {
+    text-decoration:none;
+    color:#626484;
+}
+
+#postcard{
+    margin-top:40px;
+    padding-left:40px;
+    align-items:center;
+    min-width:100%;
+}
+
+.container{
+    background-image:url(../postcard.png);
+    padding-top:20px;
+    padding-left:30px;
+    margin-bottom:30px;
+    background-repeat:no-repeat;
+    display:flex;
+}
+
+.container:after{
+    content:'';
+    display:flex;
+    clear:both;
+}
+
+
+textarea {
+    display:flex;
+    align-content:left;
+    margin-bottom:40px;
+}
+
+ input[type=text],select,textarea{
+     width:85%;
+     padding:8px;
+     border: 6px solid #C0C0C0;
+     border-radius: 4px;
+     box-sizing:border-box;
+     resize:vertical;
+     background-color: #e9feff;
+}
+
+label{
+    grid-template-columns:10px 10px 10x;
+    padding-top:20px;
+}
+
+.wrapper {
+    display:grid;
+    grid-template-columns: 200px 200px 40px;
+}
+
+input[type=submit]{
+    display:flex;
+    background-color: #00f;
+    padding:8px;
+    border: 6px solid #C0C0C0;
+    color: white;
+    size:30px;
+    font-size:14px;
+    text-decoration: none;
+    cursor:grab;
+    width:fixed;
+    width:76px;
+    border-radius:8px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.26), 0 6px 20px 0 rgba(0,0,0,0.26);
+}
+
+input[type=reset]{
+    display:flex;
+    background-color: #f00;
+    padding:8px;
+    border: 6px solid #C0C0C0;
+    color: white;
+    size:30px;
+    font-size:14px;
+    text-decoration: none;
+    cursor:grab;
+    width:fixed;
+    width:76px;
+    border-radius:8px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.26), 0 6px 20px 0 rgba(0,0,0,0.26);
+}
+
+
+.col-25{
+    float: left;
+    width: 100%;
+    margin-top: 2px;
+}
+
+.col-75{
+    float: left;
+    width: 100%;
+    margin-top: px;
+}
+
+.row:after{
+    content:'';
+    display:block;
+    clear:both;
+}
+
+.smile{
+    vertical-align:text-top;
+    column-width:100px;
+    display:block;
+    align-items:stretch;
+}
+
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+
+#money{
+    margin-top:20px;
+    padding:18px;
+    width: 260px;
+    height: 80px;
+    position:relative;
+    text-align:center;
+    animation-name: mbutton;
+    animation-duration: 5s;
+    animation-iteration-count:infinite;
+}
+
+@keyframes mbutton {
+  0%   {background-color: aliceblue; left:0%}
+  25%  {background-color: orangered; left:30%}
+  50%  {background-color: white; left:50%}
+  100% {background-color: black;left:100%}
+}
+
+
+
+
